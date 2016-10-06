@@ -29,14 +29,18 @@ namespace FirstProject.Controllers
         [HttpPost]
         public ActionResult Create(GigFormViewModel viewModel)
         {
+            if (!ModelState.IsValid)
+            {
+                viewModel.Genres = _context.Genres.ToList();
+                return View("Create", viewModel);
 
-
+            }
 
             var artistId = User.Identity.GetUserId();
             var gig = new Gig
             {
                 ArtistId = artistId,
-                DateTime = viewModel.DateTime,
+                DateTime = viewModel.GetDateTime(),
                 GenreId = viewModel.Genre,
                 Venue = viewModel.Venue
             };
