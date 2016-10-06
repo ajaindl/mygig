@@ -76,6 +76,10 @@
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.TraceListener, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.TraceListener.2.1.0\lib\net45\Microsoft.ApplicationInsights.TraceListener.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -222,6 +226,10 @@
     <Compile Include="Migrations\201609190407360_PopulateGenresTable.Designer.cs">
       <DependentUpon>201609190407360_PopulateGenresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609261951436_AddForeignKeyPropertiesToGig.cs" />
+    <Compile Include="Migrations\201609261951436_AddForeignKeyPropertiesToGig.Designer.cs">
+      <DependentUpon>201609261951436_AddForeignKeyPropertiesToGig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -317,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609190407360_PopulateGenresTable.resx">
       <DependentUpon>201609190407360_PopulateGenresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609261951436_AddForeignKeyPropertiesToGig.resx">
+      <DependentUpon>201609261951436_AddForeignKeyPropertiesToGig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

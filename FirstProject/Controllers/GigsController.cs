@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using System.Web.Razor;
 using FirstProject.Models;
 using FirstProject.ViewModels;
+using Microsoft.AspNet.Identity;
 
 namespace FirstProject.Controllers
 {
@@ -18,6 +16,7 @@ namespace FirstProject.Controllers
             _context=new ApplicationDbContext();
         }
         // GET: Gigs
+        [Authorize]
         public ActionResult Create()
         {
             var viewModel=new GigFormViewModel { 
@@ -25,5 +24,28 @@ namespace FirstProject.Controllers
                 };
             return View(viewModel);
         }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult Create(GigFormViewModel viewModel)
+        {
+
+
+
+            var artistId = User.Identity.GetUserId();
+            var gig = new Gig
+            {
+                ArtistId = artistId,
+                DateTime = viewModel.DateTime,
+                GenreId = viewModel.Genre,
+                Venue = viewModel.Venue
+            };
+            _context.Gigs.Add(gig);
+            _context.SaveChanges();
+            
+            return RedirectToAction("Index", "Home");
+        }
+
+     
     }
 }

@@ -85,3 +85,6 @@ c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.csproj.GenerateResou
 c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.Migrations.CreateGigTable.resources
 c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.Migrations.OverrideConventionsForGigsAndGenres.resources
 c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.Migrations.PopulateGenresTable.resources
+c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.Migrations.AddForeignKeyPropertiesToGig.resources
+c:\Project\FirstProject\FirstProject\bin\Microsoft.ApplicationInsights.TraceListener.dll
+c:\Project\FirstProject\FirstProject\bin\Microsoft.ApplicationInsights.TraceListener.xml
