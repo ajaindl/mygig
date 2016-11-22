@@ -22,3 +22,31 @@ select,
 textarea {
     max-width: 280px;
 }
+ .field-validation-error{
+    color: red;
+    font-weight: bold;
+}
+
+/* bootstrap overrides */
+body{
+    font-size: 17px;
+}
+
+.navbar-inverse{
+    background-color: #ff4544;
+    border-color: #ff4544;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #000000;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-control{
+    font-size: 17px;
+    padding: 20px 15px;
+}

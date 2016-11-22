@@ -88,3 +88,4 @@ c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.Migrations.PopulateG
 c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.Migrations.AddForeignKeyPropertiesToGig.resources
 c:\Project\FirstProject\FirstProject\bin\Microsoft.ApplicationInsights.TraceListener.dll
 c:\Project\FirstProject\FirstProject\bin\Microsoft.ApplicationInsights.TraceListener.xml
+c:\Project\FirstProject\FirstProject\obj\Debug\FirstProject.Migrations.AddNametoAppUser.resources
